@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
-import github from "../img/github-icon.svg";
+import github from "../img/social/github.svg";
+import linkedin from "../img/social/linkedin.svg";
+import twitter from "../img/social/twitter.svg";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -14,6 +16,9 @@ const Navbar = () => {
       <div className="container">
         <div className="navbar-brand">
           {/* Hamburger menu */}
+                    <Link to="/" className="navbar-item" title="Logo">
+                    <strong>ARI KARDASIS</strong>
+          </Link>
           <button
             className={`navbar-burger burger ${isActive && "is-active"}`}
             aria-expanded={isActive}
@@ -24,7 +29,7 @@ const Navbar = () => {
             <span />
           </button>
         </div>
-        <ul id="navMenu" className={` navbar-start has-text-centered navbar-menu ${isActive && "is-active"}`}>
+        <ul id="navMenu" className={`navbar-start has-text-centered navbar-menu ${isActive && "is-active"}`}>
             <li className="navbar-item" style={{padding: "0px"}}>
               <Link className="navbar-item" to="/">
                 Home
@@ -45,15 +50,35 @@ const Navbar = () => {
               Contact
             </Link>
             </li>
-          <li className="navbar-end has-text-centered">
+          <li className="navbar-end">
             <a
               className="navbar-item"
-              href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
+              href="https://twitter.com/kardasis"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="icon">
+                <img src={twitter} alt="Twitter" />
+              </span>
+            </a>
+            <a
+              className="navbar-item"
+              href="https://github.com/kardasis"
               target="_blank"
               rel="noopener noreferrer"
             >
               <span className="icon">
                 <img src={github} alt="Github" />
+              </span>
+            </a>
+            <a
+              className="navbar-item"
+              href="https://www.linkedin.com/in/ari-kardasis-a1b0a834/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="icon">
+                <img src={linkedin} alt="LinkedIn" />
               </span>
             </a>
           </li>

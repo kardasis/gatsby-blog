@@ -21,10 +21,11 @@ export const AboutPageTemplate = ({
       <div className="container">
         <div className="columns">
           <div className="columns column is-10 is-offset-1">
-            <div className="column is-one-fifth">
+            <div className="column  is-3">
               <GatsbyImage
                 image={headshot.childImageSharp.gatsbyImageData}
                 style={{'border-radius': "22px"}}
+                className="shadow-xl"
               />
             </div>
             <div className="section column">

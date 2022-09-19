@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
+import Technologies from "../components/Technologies";
 
 import Layout from "../components/Layout";
 import Features from "../components/Features";
@@ -12,16 +13,18 @@ import FullWidthImage from "../components/FullWidthImage";
 export const IndexPageTemplate = ({
   image,
   title,
+  subheading,
   heading,
   mainpitch,
   description,
   intro,
+  technologies,
 }) => {
   const heroImage = getImage(image) || image;
 
   return (
     <div>
-      <FullWidthImage img={heroImage} title={title}/>
+      <FullWidthImage img={heroImage} title={title}  subheading={subheading}/>
       <section className="section section--gradient">
         <div className="container">
           <div className="section">
@@ -45,6 +48,7 @@ export const IndexPageTemplate = ({
                     </div>
                   </div>
                   <Features gridItems={intro.blurbs} />
+                  <Technologies items={technologies} />
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
                       Latest stories
@@ -72,6 +76,7 @@ IndexPageTemplate.propTypes = {
   heading: PropTypes.string,
   mainpitch: PropTypes.object,
   description: PropTypes.string,
+  technologies: PropTypes.array,
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
@@ -86,9 +91,11 @@ const IndexPage = ({ data }) => {
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
+        subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
+        technologies={frontmatter.technologies}
       />
     </Layout>
   );
@@ -109,6 +116,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
+        subheading
         image {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: FULL_WIDTH)
@@ -120,8 +128,15 @@ export const pageQuery = graphql`
           description
         }
         description
+        technologies {
+          text
+          image {
+            publicURL
+          }
+        }
         intro {
           blurbs {
+            title
             image {
               childImageSharp {
                 gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)

@@ -5,6 +5,7 @@ module.exports = {
       "Ari Kardasis's personal website",
   },
   plugins: [
+    'gatsby-plugin-postcss',
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-sass",
