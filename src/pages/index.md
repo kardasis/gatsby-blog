@@ -17,29 +17,28 @@ description: >
   with mobile and web components, you've come to the right place.
 intro:
   blurbs:
+    - image: /img/mvps.png
+      title: Product MVPs
+      text: >
+        When inspiration hits and it aligns with your domain expertise and strategic insights, there's no time to waste hiring a team to bring your idea to life. 
+        We can take your concept through to a production app in a matter of weeks and give you the chance to assess, iterate and launch before you know it.
     - image: /img/frontend.png
       title: Front End
       text: >
         Frontend web design is no longer just the judicious application of HTML, CSS 
         and JavaScript. The framework selection alone can be overwealming before
-        you begin to think about design systems, hosting, SSL, dynamic content, responsive design and accessability. But fear not, we got you covered. 
+        you begin to think about design systems, hosting, SSL, dynamic content, responsive design and accessability. But fear not, we got you covered.
     - image: /img/backend.png
       title: Back End
       text: >
-        Your web or mobile app depends on the data in your database and the application logic that surrounds it. 
-        That's why we take the time to understand what your mission critical needs are and 
-    - image: /img/strategy.png
-      title: Strategy
-      text: >
-        
+        The core of any product is the application logic and associated database that users and customers interact with.  
+        But backends can get bogged down in all kinds of issues including security, performance and infrastructure costs. 
+        And as codebases grow, they need to be reconsidered to address the issues of scale that come with your growing business.
     - image: /img/prototypes.png
       title: Physical Prototypes
       text: >
-        hardware prototypes
-    - image: /img/mvps.png
-      title: Product MVPs
-      text: >
-        MVP
+        Great ideas are not always 100% digital and sometimes you need a physical object to acheieve your goals. 
+        Light robotics, sensors, actuators, lights and sounds can all be internet connected and ready to create the widget of the future. 
   heading: What we offer
 technologies:
   - image: /img/technologies/react.svg
@@ -84,4 +83,6 @@ technologies:
     text: iOS
   - image: /img/technologies/android.svg
     text: Android
+  - image: /img/technologies/gatsby.svg
+    text: Gatsby
 ---
