@@ -1,3 +1,7 @@
 p code {
     color: red;
 }
+
+.blog-list-item div.featured-thumbnail {
+    flex-basis: auto;
+}

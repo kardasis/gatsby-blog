@@ -2,7 +2,7 @@ import * as React from "react";
 import PropTypes from "prop-types";
 
 const Technologies = ({ items }) => (
-  <div className="columns is-multiline">
+  <div className="columns is-mobile is-multiline">
     {items.map((item) => (
       <div key={item.text} className="column self-center">
           <div className="has-text-centered">
