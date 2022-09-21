@@ -7,9 +7,8 @@ subheading: Software Consulting Services
 mainpitch:
   title: Sharp tools for every job
   description: >
-    Whether bringing an idea from a napkin to a product or unraveling a codebase
-    abandoned by a engineer, I'm here to help you get your job done the way you want it, pronto! Consulting isn't about spouting opinions, it's about 
-    rolling up sleeves and delivering results. And if it's not, then I don't do consulting!
+    Whether bringing an idea from a napkin to a production or unraveling a legacy codebase
+    abandoned by a engineer, we're here to help you get the job done the way you want it, pronto! 
 description: >
   Having broad experience with a wide array of technologies lends perspective 
   when choosing a stack for a greenfield project or dealing with legacy code.
@@ -27,7 +26,8 @@ intro:
       text: >
         Frontend web design is no longer just the judicious application of HTML, CSS 
         and JavaScript. The framework selection alone can be overwealming before
-        you begin to think about design systems, hosting, SSL, dynamic content, responsive design and accessability. But fear not, we got you covered.
+        you begin to think about design systems, hosting, SSL, dynamic content, 
+        responsive design and accessability. But fear not, we got you covered.
     - image: /img/backend.png
       title: Back End
       text: >
@@ -37,7 +37,7 @@ intro:
     - image: /img/prototypes.png
       title: Physical Prototypes
       text: >
-        Great ideas are not always 100% digital and sometimes you need a physical object to acheieve your goals. 
+        Great ideas are not always digital and sometimes you need a physical object to acheieve your goals. 
         Light robotics, sensors, actuators, lights and sounds can all be internet connected and ready to create the widget of the future. 
   heading: What we offer
 technologies:
