@@ -8,7 +8,6 @@ import Content, { HTMLContent } from "../components/Content";
 
 // eslint-disable-next-line
 export const BlogPostTemplate = ({
-  image,
   content,
   contentComponent,
   description,
