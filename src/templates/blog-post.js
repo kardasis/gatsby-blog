@@ -27,7 +27,7 @@ export const BlogPostTemplate = ({
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light text-center">
               {title}
             </h1>
-            <h5 className="mb-10 w-2/3 mx-auto text-center"><strong>{description}</strong></h5>
+            <h5 className="pb-24 w-2/3 mx-auto text-center"><strong>{description}</strong></h5>
             <PostContent content={content} className="leading-9 w-2/3 mx-auto" />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
