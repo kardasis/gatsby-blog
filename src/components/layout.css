@@ -54,3 +54,34 @@ code[class*="language-"] {
     font-size: 16px;
     font-weight: 500;
 }
+
+.content table {
+    border: 1px solid grey;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+	font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+    background-color: #eee9ff;
+    text-align: center;
+} 
+
+.content th, .content td {
+    border: 1px solid black;
+}
+
+.content tr:nth-child(even) {
+    background-color: #fbffe7;
+}
+
+.content th {
+    color: #eaffe9;
+    background-color: gray;
+}
+
+.content td del {
+    text-decoration: none;
+}
+
+.content td:has(del) {
+    background-color: red;
+}
