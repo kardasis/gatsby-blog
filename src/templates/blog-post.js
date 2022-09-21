@@ -8,6 +8,7 @@ import Content, { HTMLContent } from "../components/Content";
 
 // eslint-disable-next-line
 export const BlogPostTemplate = ({
+  image,
   content,
   contentComponent,
   description,
@@ -23,11 +24,11 @@ export const BlogPostTemplate = ({
       <div className="container content max-w-xl">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+            <h1 className="title is-size-2 has-text-weight-bold is-bold-light text-center">
               {title}
             </h1>
-            <p>{description}</p>
-            <PostContent content={content} />
+            <h5 className="mb-10 w-2/3 mx-auto text-center"><strong>{description}</strong></h5>
+            <PostContent content={content} className="leading-9 w-2/3 mx-auto" />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>

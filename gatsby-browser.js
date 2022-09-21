@@ -1,3 +1,3 @@
 import './src/styles/global.css'
-import './src/styles/prism-gruvbox-dark.css'
+import './src/styles/prism-duotone-light.css'
 

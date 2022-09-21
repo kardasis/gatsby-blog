@@ -33,3 +33,24 @@ footer .flex-row{
 footer.footer {
     padding: 2rem 10% 4rem;
 }
+
+.post-preview {
+    margin-bottom: 2rem;
+}
+
+h2 code[class*="language-"] { 
+    font-size: 24px;
+}
+
+p {
+    font-size: 20px;
+}
+pre[class*="language-"] {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+code[class*="language-"] { 
+    font-size: 16px;
+    font-weight: 500;
+}
