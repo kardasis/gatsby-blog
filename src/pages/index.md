@@ -1,7 +1,6 @@
 ---
 templateKey: index-page
 title: Ari Kardasis
-image: /img/jumbotron.png
 heading: Consulting
 subheading: Software Consulting Services
 mainpitch:

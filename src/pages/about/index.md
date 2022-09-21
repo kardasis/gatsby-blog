@@ -7,7 +7,7 @@ headshot: /img/headshot.png
 
 I'm Ari Kardasis. I'm a software engineer with a long career spanning
 different sectors, roles, company stages and team sizes. I've been
-shoveling ones and zeros since the Clinton Administration and by now,
+coding for over 25 years and by now
 I have a pretty good idea of what I'm doing. From mobile games to
 blockchain, startups to FAANG, consulting, foundering and IC
 engineering, I've worked on a huge array of products in all kinds of

@@ -5,3 +5,31 @@ p code {
 .blog-list-item div.featured-thumbnail {
     flex-basis: auto;
 }
+
+footer .content li + li {
+    margin-top: 0;
+}
+
+footer a img {
+    height: 2rem;
+    width: 2rem;
+}
+
+footer a {
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+footer a img {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+footer .flex-row{
+    justify-content: center;
+}
+
+
+footer.footer {
+    padding: 2rem 10% 4rem;
+}

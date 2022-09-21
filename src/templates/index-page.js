@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
-import { getImage } from "gatsby-plugin-image";
 import Technologies from "../components/Technologies";
 
 import Layout from "../components/Layout";
@@ -11,7 +10,6 @@ import FullWidthImage from "../components/FullWidthImage";
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
-  image,
   title,
   subheading,
   heading,
@@ -20,11 +18,10 @@ export const IndexPageTemplate = ({
   intro,
   technologies,
 }) => {
-  const heroImage = getImage(image) || image;
 
   return (
     <div>
-      <FullWidthImage img={heroImage} title={title}  subheading={subheading}/>
+      <FullWidthImage title={title}  subheading={subheading}/>
       <section className="section section--gradient">
         <div className="container">
           <div className="section">
@@ -71,9 +68,8 @@ export const IndexPageTemplate = ({
 };
 
 IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
-  heading: PropTypes.string,
+  headino: PropTypes.string,
   mainpitch: PropTypes.object,
   description: PropTypes.string,
   technologies: PropTypes.array,
@@ -88,7 +84,6 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
@@ -117,11 +112,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         subheading
-        image {
-          childImageSharp {
-            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
-          }
-        }
         heading
         mainpitch {
           title
