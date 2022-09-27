@@ -83,5 +83,5 @@ code[class*="language-"] {
 }
 
 .content td:has(del) {
-    background-color: red;
+    background-color: #ff7799;
 }

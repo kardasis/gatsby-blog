@@ -2,16 +2,15 @@
 templateKey: index-page
 title: Ari Kardasis
 heading: Consulting
-subheading: Software Consulting Services
 mainpitch:
   title: Sharp tools for every job
   description: >
-    Whether bringing an idea from a napkin to a production or unraveling a legacy codebase
-    abandoned by a engineer, we're here to help you get the job done the way you want it, pronto! 
+    Whether bringing an idea from a napkin to production or unraveling a legacy codebase
+    , we're here to help you get the job done the way you want it, pronto! 
 description: >
-  Having broad experience with a wide array of technologies lends perspective 
+  We have broad experience with a wide array of technologies which gives us perspective 
   when choosing a stack for a greenfield project or dealing with legacy code.
-  Whether you're building a static website or a fully functional full-stack app 
+  Whether you're building a static website or a full-stack app 
   with mobile and web components, you've come to the right place.
 intro:
   blurbs:

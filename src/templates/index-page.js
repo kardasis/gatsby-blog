@@ -11,7 +11,6 @@ import FullWidthImage from "../components/FullWidthImage";
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
   title,
-  subheading,
   heading,
   mainpitch,
   description,
@@ -21,7 +20,7 @@ export const IndexPageTemplate = ({
 
   return (
     <div>
-      <FullWidthImage title={title}  subheading={subheading}/>
+      <FullWidthImage title={title}  subheading=""/>
       <section className="section section--gradient">
         <div className="container">
           <div className="section">
@@ -69,7 +68,7 @@ export const IndexPageTemplate = ({
 
 IndexPageTemplate.propTypes = {
   title: PropTypes.string,
-  headino: PropTypes.string,
+  heading: PropTypes.string,
   mainpitch: PropTypes.object,
   description: PropTypes.string,
   technologies: PropTypes.array,
@@ -86,7 +85,6 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         title={frontmatter.title}
         heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
@@ -111,7 +109,6 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
-        subheading
         heading
         mainpitch {
           title
