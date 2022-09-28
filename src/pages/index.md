@@ -3,40 +3,42 @@ templateKey: index-page
 title: Ari Kardasis
 heading: Consulting
 mainpitch:
-  title: Sharp tools for every job
+  title: Razor-sharp tools for every job
   description: >
-    Whether bringing an idea from a napkin to production or unraveling a legacy codebase
-    , we're here to help you get the job done the way you want it, pronto! 
+    Idea scribbled on a napkin? We'll elegantly bring it to production. 
+    Tangled legacy codebase? We can unravel it.
+    Trust us to get it done the way YOU want it, fast.
 description: >
-  We have broad experience with a wide array of technologies which gives us perspective 
-  when choosing a stack for a greenfield project or dealing with legacy code.
-  Whether you're building a static website or a full-stack app 
-  with mobile and web components, you've come to the right place.
+  We have expertise in loads of technologies.
+  This gives us perspective to confidently choose a stack for your greenfield project, refactor a stale codebase or provide strategic technical direction.
+  Whether you're building a static website or a full-stack app with mobile and web components, you've come to the right place.
 intro:
   blurbs:
     - image: /img/mvps.png
       title: Product MVPs
       text: >
-        When inspiration hits and it aligns with your domain expertise and strategic insights, there's no time to waste hiring a team to bring your idea to life. 
-        We can take your concept through to a production app in a matter of weeks and give you the chance to assess, iterate and launch before you know it.
+        When your inspiration + domain expertise + strategic insights are all aligned, there's no time to waste;
+        you need a team to bring your idea to life. 
+        We'll turn your concept into a production app within weeks, giving you the chance to assess, iterate and launch before you know it.
     - image: /img/frontend.png
       title: Front End
       text: >
         Frontend web design is no longer just the judicious application of HTML, CSS 
         and JavaScript. The framework selection alone can be overwealming before
-        you begin to think about design systems, hosting, SSL, dynamic content, 
+        you begin to consier your design systems, hosting, SSL, dynamic content, 
         responsive design and accessability. But fear not, we got you covered.
     - image: /img/backend.png
       title: Back End
       text: >
-        The core of any product is the application logic and associated database that users and customers interact with.  
-        But backends can get bogged down in all kinds of issues including security, performance and infrastructure costs. 
-        And as codebases grow, they need to be reconsidered to address the issues of scale that come with your growing business.
+        Backends can get bogged down with problems like security, performance and infrastructure costs. 
+        And as codebases grow, they need to be reconsidered to address the issues of scale that come with your growing business. 
+        Our job is to anticipate problems and stay on top of them. 
     - image: /img/prototypes.png
       title: Physical Prototypes
       text: >
-        Great ideas are not always digital and sometimes you need a physical object to acheieve your goals. 
-        Light robotics, sensors, actuators, lights and sounds can all be internet connected and ready to create the widget of the future. 
+        Great ideas are not always digital; sometimes you need a physical object to achieve your goals. 
+        Our unique background in architecture, mathmatics and computation make us expert builders, too. 
+        Light robotics, sensors, actuators, lights and sounds can all be internet-connected to create the widget of your dreams.
   heading: What we offer
 technologies:
   - image: /img/technologies/react.svg
