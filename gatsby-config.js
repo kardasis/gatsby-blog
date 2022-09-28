@@ -1,11 +1,61 @@
+const sitemapOptions = {
+  query: `
+        {
+          allSitePage {
+            nodes {
+              path
+            }
+          }
+          allWpContentNode(filter: {nodeType: {in: ["Post", "Page"]}}) {
+            nodes {
+              ... on WpPost {
+                uri
+                modifiedGmt
+              }
+              ... on WpPage {
+                uri
+                modifiedGmt
+              }
+            }
+          }
+        }
+      `,
+    resolveSiteUrl: () => siteUrl,
+    resolvePages: ({
+      allSitePage: { nodes: allPages },
+      allWpContentNode: { nodes: allWpNodes },
+    }) => {
+      const wpNodeMap = allWpNodes.reduce((acc, node) => {
+        const { uri } = node
+        acc[uri] = node
+
+        return acc
+      }, {})
+
+      return allPages.map(page => {
+        return { ...page, ...wpNodeMap[page.path] }
+      })
+    },
+    serialize: ({ path, modifiedGmt }) => {
+      return {
+        url: path,
+        lastmod: modifiedGmt,
+      }
+    }
+}
+
 module.exports = {
   siteMetadata: {
     title: "Ari Kardasis",
-    description:
-      "Ari Kardasis's personal website",
+    description: "Software Consulting Services",
+    siteUrl: "https://www.arikardasis.com",
   },
   plugins: [
-    'gatsby-plugin-postcss',
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: sitemapOptions
+    },
+    "gatsby-plugin-postcss",
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-sass",
@@ -44,7 +94,7 @@ module.exports = {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
-          'gatsby-remark-relative-images',
+          "gatsby-remark-relative-images",
           `gatsby-remark-prismjs`,
           {
             resolve: "gatsby-remark-images",
