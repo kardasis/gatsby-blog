@@ -2,20 +2,27 @@
 templateKey: index-page
 title: Ari Kardasis
 heading: Consulting
+subheading: Products. Objects. Invention
 mainpitch:
   title: Razor-sharp tools for every job
   description: >
     Idea scribbled on a napkin? We'll elegantly bring it to production. 
-    Tangled legacy codebase? We can unravel it.
-    Trust us to get it done the way YOU want it, fast.
+    Having trouble bringing software and hardware together? No worries!
+    Trust us to get it done the way YOU want it.
 description: >
   We have expertise in loads of technologies.
   This gives us perspective to confidently choose a stack for your greenfield project, refactor a stale codebase or provide strategic technical direction.
-  Whether you're building a static website or a full-stack app with mobile and web components, you've come to the right place.
+  Whether you're building a one-off concept or a full-stack IoT app with mobile and web components, you've come to the right place.
 intro:
   blurbs:
+    - image: /img/prototypes.png
+      title: Product Prototypes
+      text: >
+        Great ideas are not always digital; sometimes you need a physical object to achieve your goals. 
+        Our unique background in architecture, mathmatics and computation make us expert builders, too. 
+        Light robotics, sensors, actuators, lights and sounds can all be internet-connected to create the widget of your dreams.
     - image: /img/mvps.png
-      title: Product MVPs
+      title: Digital MVPs
       text: >
         When your inspiration + domain expertise + strategic insights are all aligned, there's no time to waste;
         you need a team to bring your idea to life. 
@@ -33,12 +40,6 @@ intro:
         Backends can get bogged down with problems like security, performance and infrastructure costs. 
         And as codebases grow, they need to be reconsidered to address the issues of scale that come with your growing business. 
         Our job is to anticipate problems and stay on top of them. 
-    - image: /img/prototypes.png
-      title: Physical Prototypes
-      text: >
-        Great ideas are not always digital; sometimes you need a physical object to achieve your goals. 
-        Our unique background in architecture, mathmatics and computation make us expert builders, too. 
-        Light robotics, sensors, actuators, lights and sounds can all be internet-connected to create the widget of your dreams.
   heading: What we offer
 technologies:
   - image: /img/technologies/react.svg

@@ -16,11 +16,12 @@ export const IndexPageTemplate = ({
   description,
   intro,
   technologies,
+  subheading
 }) => {
 
   return (
     <div>
-      <FullWidthImage title={title}  subheading=""/>
+      <FullWidthImage title={title}  subheading={subheading}/>
       <section className="section section--gradient">
         <div className="container">
           <div className="section">
@@ -68,6 +69,7 @@ export const IndexPageTemplate = ({
 
 IndexPageTemplate.propTypes = {
   title: PropTypes.string,
+  subheading: PropTypes.string,
   heading: PropTypes.string,
   mainpitch: PropTypes.object,
   description: PropTypes.string,
@@ -84,6 +86,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         title={frontmatter.title}
+        subheading={frontmatter.subheading}
         heading={frontmatter.heading}
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
@@ -109,6 +112,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
+        subheading
         heading
         mainpitch {
           title
