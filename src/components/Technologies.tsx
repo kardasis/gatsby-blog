@@ -4,17 +4,17 @@ import PropTypes from "prop-types";
 const Technologies = ({ items }) => (
   <div className="columns is-mobile is-multiline">
     {items.map((item) => (
-      <div key={item.text} className="column self-center">
-          <div className="has-text-centered">
-            <div
-              style={{
-                width: "70px",
-                display: "inline-block",
-              }}
-            >
+      <div key={item.text} className="column self-center technology-wrapper">
+        <div className="has-text-centered">
+          <div
+            style={{
+              width: "35px",
+              display: "inline-block",
+            }}
+          >
             <img src={item.image.publicURL} alt={item.text} title={item.text} />
-            </div>
           </div>
+        </div>
       </div>
     ))}
   </div>

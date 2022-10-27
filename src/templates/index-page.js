@@ -11,17 +11,22 @@ import FullWidthImage from "../components/FullWidthImage";
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
   title,
+  featuredImage,
   heading,
   mainpitch,
   description,
   intro,
   technologies,
-  subheading
+  subheading,
 }) => {
-
   return (
     <div>
-      <FullWidthImage title={title}  subheading={subheading}/>
+      <FullWidthImage
+        height={800}
+        title={title}
+        subheading={subheading}
+        image={featuredImage}
+      />
       <section className="section section--gradient">
         <div className="container">
           <div className="section">
@@ -30,7 +35,11 @@ export const IndexPageTemplate = ({
                 <div className="content">
                   <div className="content">
                     <div className="tile">
-                      <h1 className="title">{mainpitch.title}</h1>
+                      <h1 className="title">
+                        <span className="aqua-text">
+                          {mainpitch.title}
+                        </span>
+                      </h1>
                     </div>
                     <div className="tile">
                       <h3 className="subtitle">{mainpitch.description}</h3>
@@ -38,8 +47,8 @@ export const IndexPageTemplate = ({
                   </div>
                   <div className="columns">
                     <div className="column is-12">
-                      <h3 className="has-text-weight-semibold is-size-2">
-                        {heading}
+                      <h3 className="has-text-weight-semibold is-size-2 t">
+                        <span className="yellow-text"> {heading} </span>
                       </h3>
                       <p>{description}</p>
                     </div>
@@ -47,7 +56,7 @@ export const IndexPageTemplate = ({
                   <Features gridItems={intro.blurbs} />
                   <Technologies items={technologies} />
                   <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
+                    <h3 className="has-text-weight-semibold is-size-2 yellow-text">
                       Latest stories
                     </h3>
                     <BlogRoll />
@@ -70,6 +79,7 @@ export const IndexPageTemplate = ({
 IndexPageTemplate.propTypes = {
   title: PropTypes.string,
   subheading: PropTypes.string,
+  featuredImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   heading: PropTypes.string,
   mainpitch: PropTypes.object,
   description: PropTypes.string,
@@ -86,6 +96,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         title={frontmatter.title}
+        featuredImage={frontmatter.featuredImage}
         subheading={frontmatter.subheading}
         heading={frontmatter.heading}
         mainpitch={frontmatter.mainpitch}
@@ -113,6 +124,11 @@ export const pageQuery = graphql`
       frontmatter {
         title
         subheading
+        featuredImage {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: CONSTRAINED)
+          }
+        }
         heading
         mainpitch {
           title

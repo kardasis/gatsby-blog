@@ -2,6 +2,7 @@ import * as React from "react";
 import { Link } from "gatsby";
 
 import github from "../img/social/github.svg";
+import youtube from "../img/social/youtube.svg";
 import linkedin from "../img/social/linkedin.svg";
 import twitter from "../img/social/twitter.svg";
 
@@ -40,6 +41,9 @@ const Footer = () => {
             </a>
             <a title="GitHub" href="https://github.com/kardasis">
               <img className="invert" src={github} alt="GitHub" />
+            </a>
+            <a title="YouTube" href="https://www.youtube.com/channel/UC-Q7CrYOh6V6-6vol8BFoNg">
+              <img className="invert" src={youtube} alt="YouTube" />
             </a>
             <a
               title="LinkedIn"

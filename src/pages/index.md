@@ -2,7 +2,8 @@
 templateKey: index-page
 title: Ari Kardasis
 heading: Consulting
-subheading: Products. Objects. Invention
+subheading: Products. Objects. Invention.
+featuredImage: /img/hero.png
 mainpitch:
   title: Razor-sharp tools for every job
   description: >

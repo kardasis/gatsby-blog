@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
+import youtube from "../img/social/youtube.svg";
 import github from "../img/social/github.svg";
 import linkedin from "../img/social/linkedin.svg";
 import twitter from "../img/social/twitter.svg";
@@ -59,6 +60,16 @@ const Navbar = () => {
             >
               <span className="icon">
                 <img src={twitter} alt="Twitter" />
+              </span>
+            </a>
+            <a
+              className="navbar-item"
+              href="https://www.youtube.com/channel/UC-Q7CrYOh6V6-6vol8BFoNg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="icon">
+                <img src={youtube} alt="YouTube" />
               </span>
             </a>
             <a

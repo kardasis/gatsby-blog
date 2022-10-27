@@ -2,6 +2,30 @@ p code {
     color: red;
 }
 
+div.post-preview article.blog-list-item {
+  background-color: #f4b8a433;
+}
+
+div.post-preview article.blog-list-item:hover {
+  background-color: #f4b8a466;
+}
+
+div.technology-wrapper {
+  padding: 5px;
+}
+
+.yellow-text {
+  color: black;
+  background-color: #E7FFBB;
+  padding: 4px;
+}
+
+.aqua-text {
+  color: black;
+  background-color: #A2F5FF;
+  padding: 4px;
+}
+
 .blog-list-item div.featured-thumbnail {
     flex-basis: auto;
 }
